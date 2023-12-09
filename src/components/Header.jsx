@@ -1,5 +1,4 @@
 // Here we are importing a CSS file as a dependency
-import { Outlet } from 'react-router-dom';
 import '../styles/Header.css';
 import NavTabs from './NavTabs';
 
