@@ -1,55 +1,49 @@
 import '../styles/Body.css';
 import { useState } from 'react';
 import '../assets/style.css';
+
 export default function Contact() {
-    function Form() {
-        // Here we set two state variables for firstName and lastName using `useState`
-        const [firstName, setFirstName] = useState('');
-        const [lastName, setLastName] = useState('');
+    const [Name, setName] = useState('');
+    const [Email, setEmail] = useState('');
+    const [Message, setMessage] = useState('');
 
-        const handleInputChange = (e) => {
-            // Getting the value and name of the input which triggered the change
-            const { name, value } = e.target;
+    return (
 
-            // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-            return name === 'firstName' ? setFirstName(value) : setLastName(value);
-        };
+        <>
+            <div className="container">
+                <h1>Contact Me</h1>
 
-        const handleFormSubmit = (e) => {
-            // Preventing the default behavior of the form submit (which is to refresh the page)
-            e.preventDefault();
-
-            // Alert the user their first and last name, clear the inputs
-            alert(`Hello ${firstName} ${lastName}`);
-            setFirstName('');
-            setLastName('');
-        };
-
-        return (
-            <div className="container text-center">
-                <h1>
-                    Hello {firstName} {lastName}
-                </h1>
-                <form className="form" onSubmit={handleFormSubmit}>
+                
+                <label>
+                    Name:
                     <input
-                        value={firstName}
-                        name="firstName"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder="First Name"
+                        value={Name}
+                        onChange={e => setName(e.target.value)}
                     />
+                </label>
+                <br></br>
+                <label>
+                    Email:
                     <input
-                        value={lastName}
-                        name="lastName"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder="Last Name"
+                        value={Email}
+                        onChange={e => setEmail(e.target.value)}
                     />
-                    <button type="submit">
-                        Submit
-                    </button>
-                </form>
+                </label>
+                <br></br>
+                <label>
+                    Message:
+                    <textarea name="postContent" rows={10} cols={100} />
+                </label><br></br>
+                <button type="submit">SUBMIT</button>
+
+                {Name !== '' &&
+                    <p>Your name is {Name}.</p>
+                }
+                {Email !== '' &&
+                    <p>Your email is {Email}.</p>
+                }
+
             </div>
-        );
-    }
+        </>
+    );
 }
