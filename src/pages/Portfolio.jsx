@@ -1,3 +1,4 @@
+import '../styles/Body.css';
 export default function Portfolio() {
   return (
     <div className="container">

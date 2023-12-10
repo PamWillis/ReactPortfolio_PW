@@ -1,3 +1,4 @@
+import '../styles/Body.css';
 import { useState } from 'react';
 import '../assets/style.css';
 export default function Contact() {

@@ -1,8 +1,8 @@
-
+import '../styles/Body.css';
 export default function About() {
   return (
     <div className="container">
-      <h1>About Page</h1>
+      <h1>About</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
