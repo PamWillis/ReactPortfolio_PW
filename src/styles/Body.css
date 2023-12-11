@@ -1,3 +1,13 @@
 h1 {
     font-family: 'Abel', sans-serif;
 }
+.card {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
