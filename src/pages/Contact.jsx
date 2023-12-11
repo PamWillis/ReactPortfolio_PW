@@ -42,7 +42,9 @@ export default function Contact() {
 //___________________________________________________________________
   return (
     <form id="myForm" method="post" onSubmit={handleSubmit}>
-      <div className="container">
+      <div className="concontainer">
+      <div className="conitems">
+
         <h1>Contact Me</h1>
         <label>
           Name:<br></br>
@@ -77,6 +79,8 @@ export default function Contact() {
         <button type="submit">SUBMIT</button>
         {!isValidEmail && <p>Please enter a valid email.</p>}
         {!isEntry && <p>Please fill in all required fields.</p>}
+
+      </div>
       </div>
     </form>
   );

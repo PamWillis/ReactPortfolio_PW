@@ -1,7 +1,8 @@
 import '../styles/Body.css';
+import React from 'react';
 export default function About() {
   return (
-    <div className="container">
+    <div className="contContainer">
       <h1>About</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.

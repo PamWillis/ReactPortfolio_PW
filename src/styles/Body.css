@@ -1,13 +1,49 @@
 h1 {
-    font-family: 'Abel', sans-serif;
+  font-family: 'Abel', sans-serif;
 }
-.card {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    margin-bottom: 1em;
-  }
 
+.concontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height as per your requirement */
+  width: 100%;
+  /* Set other desired styles for the container */
+  border: 1px solid black; /* Just for visualization */
+}
+
+.conitems {
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background-color: lightgray;
+  /* Set other desired styles for the items */
+}
+
+.card {
+  width: 30%;
+  height: 30%;
+  display: flex;
+
+
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 0px;
+  /* gap between rows */
+  column-gap: 0px;
+  /* gap between columns */
+  justify-content: center;
+  margin: 4em, ;
+  padding: 0em;
+}
+
+.bulletCon {
+  margin: 0px 5%;
+}
