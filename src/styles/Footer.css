@@ -1,20 +1,29 @@
-.footer {
-    background: #3913f9;
-    height: 50px;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+.content {
+  flex: 1; /* Allow the content to take up remaining vertical space */
 }
 
 .footer {
-    display: flex;
-    justify-content: center; /* Center the icon horizontally */
-    align-items: center; /* Center the icon vertically */
-    height: 100px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 30px;
+  background-color: #f3abab;
+  position: relative; /* Set the position property to relative */
+  bottom: 0; /* Position the footer at the bottom */
+  width: 100%; /* Ensure the footer spans the entire width */
+}
 
-    font-size: 30px;
-    background-color: #f3abab; /* Add a background color for better visibility */
-  }
-  .footer i {
-    color: white;
-    font-size: 50px;
-    margin: 20px;
-  }
+.footer i {
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+}
 
