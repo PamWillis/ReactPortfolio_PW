@@ -10,14 +10,18 @@ h1 {
   height: 100vh; /* Set the height as per your requirement */
   width: 100%;
   /* Set other desired styles for the container */
-  border: 1px solid black; /* Just for visualization */
+  background-color: rgb(161, 161, 248);
+
 }
 
 .conitems {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  height: 100vb;
   padding: 10px;
-  background-color: lightgray;
+  background-color: rgb(211, 211, 211);
+  margin: 10px;
   /* Set other desired styles for the items */
 }
 
@@ -25,8 +29,6 @@ h1 {
   width: 30%;
   height: 30%;
   display: flex;
-
-
   padding: 1em;
   margin-bottom: 1em;
 }
