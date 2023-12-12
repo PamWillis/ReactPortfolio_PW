@@ -3,6 +3,8 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import Recipe from '../assets/images/Recipe.png';
 import PWA from '../assets/images/PAWtextEditor.png';
+import '../styles/Portfolio.css';
+import '../styles/Body.css';
 
 
 const projects = [
@@ -25,10 +27,14 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="container">
+   
+   <div className='container'>
+       <h1>Portfolio</h1>
+       <div className="portContainer">
       {projects.map((project, index) => (
         <ProjectCard key={index} {...project} />
       ))}
+    </div>
     </div>
   );
 };

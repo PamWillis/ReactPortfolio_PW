@@ -1,0 +1,11 @@
+  .portContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projCard {
+    margin: 1em;
+    padding: 1em;
+  }
+  .bulletCon {
+    margin: 0px 5%;
+  }

@@ -1,12 +1,12 @@
-.header {
+header {
     background: #f9b713;
-    height: 200px;
+    height:min-content;
   }
   
-  .header h1 {
+header h1 {
     font-family: 'Lobster', sans-serif;
     margin: 0;
-    padding-top: 75px;
+    padding-top: 1rem;
     text-align: center;
     color: white;
     font-size: 3rem;

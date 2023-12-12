@@ -1,51 +1,29 @@
+/* //Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* //___________________________________ */
 h1 {
   font-family: 'Abel', sans-serif;
-}
-
-.concontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Set the height as per your requirement */
-  width: 100%;
-  /* Set other desired styles for the container */
-  background-color: rgb(161, 161, 248);
-
-}
-
-.conitems {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vb;
-  padding: 10px;
-  background-color: rgb(211, 211, 211);
-  margin: 10px;
-  /* Set other desired styles for the items */
-}
-
-.card {
-  width: 30%;
-  height: 30%;
-  display: flex;
-  padding: 1em;
-  margin-bottom: 1em;
-}
-
-ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 0px;
-  /* gap between rows */
-  column-gap: 0px;
-  /* gap between columns */
-  justify-content: center;
-  margin: 4em, ;
-  padding: 0em;
-}
-
-.bulletCon {
-  margin: 0px 5%;
 }

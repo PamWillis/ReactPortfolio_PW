@@ -1,0 +1,11 @@
+.concontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height as per your requirement */
+    width: 100%;
+    /* Set other desired styles for the container */
+    background-color: rgb(161, 161, 248);
+  
+  }

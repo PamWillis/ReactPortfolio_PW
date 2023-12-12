@@ -6,7 +6,7 @@ import { Card } from 'react-bootstrap';
 
 const ProjectCard = ({ title, description, items, imageUrl, link }) => {
   return (
-    <Card>
+    <Card className='projCard'>
       <a href={link} target="_blank" rel="noopener noreferrer">
       <Card.Img
       variant="top"
@@ -14,7 +14,7 @@ const ProjectCard = ({ title, description, items, imageUrl, link }) => {
       alt={title} 
       style={{ height: '100%', width: '100%' }}/>
         View Project
-      </a>
+      </a><br></br>
       <h3>{title}</h3>
       <p>{description}</p>
       <div className='bulletCon'>

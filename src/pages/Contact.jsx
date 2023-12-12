@@ -1,4 +1,5 @@
 import '../styles/Body.css';
+import '../styles/Contacts.css';
 import React, { useState } from 'react';
 
 export default function Contact() {
@@ -43,7 +44,7 @@ export default function Contact() {
   return (
     <form id="myForm" method="post" onSubmit={handleSubmit}>
       <div className="concontainer">
-      <div className="conitems">
+
 
         <h1>Contact Me</h1>
         <label>
@@ -80,7 +81,7 @@ export default function Contact() {
         {!isValidEmail && <p>Please enter a valid email.</p>}
         {!isEntry && <p>Please fill in all required fields.</p>}
 
-      </div>
+
       </div>
     </form>
   );

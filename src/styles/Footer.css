@@ -1,22 +1,14 @@
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
-  margin: 0; /* Remove default margin */
-}
 
-.content {
-  flex: 1; /* Allow the content to take up remaining vertical space */
-}
 
-.footer {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   font-size: 30px;
   background-color: #f3abab;
-  position: relative; /* Set the position property to relative */
+  position: fixed;
+  margin-top: auto;
   bottom: 0; /* Position the footer at the bottom */
   width: 100%; /* Ensure the footer spans the entire width */
 }
