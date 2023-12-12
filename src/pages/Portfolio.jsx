@@ -26,7 +26,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div>
+    <div className="btm-mar">
       <h1>Portfolio</h1>
       <div className="projCard">
         {projects.map((project, index) => (

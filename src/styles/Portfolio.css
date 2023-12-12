@@ -2,3 +2,8 @@ h1 {
   font-family: 'Abel', sans-serif;
 }
 
+.btm-mar {
+  margin-bottom: 100px;
+  position: relative;
+}
+
