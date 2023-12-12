@@ -26,14 +26,13 @@ const projects = [
 
 const Portfolio = () => {
   return (
-   
-   <div className='container'>
-       <h1>Portfolio</h1>
-       <div className="portContainer">
-      {projects.map((project, index) => (
-        <ProjectCard key={index} {...project} />
-      ))}
-    </div>
+    <div>
+      <h1>Portfolio</h1>
+      <div className="projCard">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
+      </div>
     </div>
   );
 };

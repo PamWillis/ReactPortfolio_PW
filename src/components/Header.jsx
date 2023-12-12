@@ -1,6 +1,6 @@
 // Here we are importing a CSS file as a dependency
 import '../styles/Header.css';
-import '../styles/Body.css';
+
 import React from 'react';
 import NavTabs from './NavTabs';
 
