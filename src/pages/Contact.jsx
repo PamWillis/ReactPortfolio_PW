@@ -1,4 +1,3 @@
-import '../styles/Body.css';
 import '../styles/Contacts.css';
 import React, { useState } from 'react';
 

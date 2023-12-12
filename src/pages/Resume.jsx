@@ -1,4 +1,3 @@
-import '../styles/Body.css';
 import pdf from "../assets/Pam.pdf";
 
 export default function Resume() {

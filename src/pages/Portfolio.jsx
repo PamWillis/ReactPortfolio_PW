@@ -4,7 +4,6 @@ import ProjectCard from './ProjectCard';
 import Recipe from '../assets/images/Recipe.png';
 import PWA from '../assets/images/PAWtextEditor.png';
 import '../styles/Portfolio.css';
-import '../styles/Body.css';
 
 
 const projects = [
