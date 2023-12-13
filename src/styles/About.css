@@ -1,0 +1,12 @@
+.portrait {
+    height: 40%;
+    width: 40%;
+  }
+
+@media (min-width: 768px) {
+    .portrait {
+      height: 10%;
+      width: 10%;
+
+    }
+}

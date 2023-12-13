@@ -9,7 +9,7 @@ function Footer() {
       <a href={linked} target="_blank" rel="noopener noreferrer">
         <i className="fa fa-linkedin icon"></i></a>
       <a href={github} target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-github icon"></i>
+        <i className="fa fa-github icon"></i>
       </a>
     </footer>
   );
