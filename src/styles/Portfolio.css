@@ -2,8 +2,26 @@ h1 {
   font-family: 'Abel', sans-serif;
 }
 
-.btm-mar {
+.innerContainer {
   margin-bottom: 100px;
-  position: relative;
+}
+
+.card-size {
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 2px;
+}
+
+@media (min-width: 768px) {
+  .card-size {
+    height: 40%;
+    width: 40%;
+    margin-right: 10px;
+  }
+  .innerContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 

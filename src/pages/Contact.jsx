@@ -1,4 +1,4 @@
-import '../styles/Contacts.css';
+import '../styles/Contact.css';
 import React, { useState } from 'react';
 
 export default function Contact() {
@@ -17,7 +17,7 @@ export default function Contact() {
     const notemptyRegex = /^.+$/;
     return notemptyRegex.test(value);
   };
-//_________________________________________________________________
+  //_________________________________________________________________
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -39,12 +39,10 @@ export default function Contact() {
     const formJson = Object.fromEntries(formData.entries());
     console.log(formJson);
   }
-//___________________________________________________________________
+  //___________________________________________________________________
   return (
     <form id="myForm" method="post" onSubmit={handleSubmit}>
       <div className="concontainer">
-
-
         <h1>Contact Me</h1>
         <label>
           Name:<br></br>
@@ -54,7 +52,6 @@ export default function Contact() {
             onChange={(e) => setName(e.target.value)}
           />
         </label>
-        <br></br>
         <label>
           Email:<br></br>
           <input
@@ -64,23 +61,19 @@ export default function Contact() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
-        <br></br>
         <label>
           Message:<br></br>
           <textarea
             name="message"
-            rows={10}
+            rows={7}
             cols={100}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
         </label>
-        <br></br>
         <button type="submit">SUBMIT</button>
         {!isValidEmail && <p>Please enter a valid email.</p>}
         {!isEntry && <p>Please fill in all required fields.</p>}
-
-
       </div>
     </form>
   );

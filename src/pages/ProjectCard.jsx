@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap';
 
 const ProjectCard = ({ title, description, items, imageUrl, link }) => {
   return (
-    <Card>
+    <Card className="mb-4 card-size">
       <a href={link} target="_blank" rel="noopener noreferrer">
       <Card.Img
       variant="top"
@@ -13,7 +13,7 @@ const ProjectCard = ({ title, description, items, imageUrl, link }) => {
       alt={title} 
       style={{ height: '100%', width: '100%' }}/>
         <button>View Project</button>
-      </a><br></br>
+      </a>
       <h3>{title}</h3>
       <p>{description}</p>
       <div>

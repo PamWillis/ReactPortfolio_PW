@@ -26,12 +26,14 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="btm-mar">
+    <div className="container">
+
       <h1>Portfolio</h1>
-      <div className="projCard">
+      <div className="innerContainer">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
+
       </div>
     </div>
   );

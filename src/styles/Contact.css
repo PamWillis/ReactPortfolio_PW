@@ -1,0 +1,46 @@
+h1 {
+  font-family: 'Abel', sans-serif;
+}
+
+.concontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  /* Set the height as per your requirement */
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+
+  /* Set other desired styles for the container */
+  background-color: rgb(161, 161, 248);
+
+}
+
+button {
+  background: #89bbe5;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  text-shadow: none;
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+}
+
+button:hover {
+  background: #016ABC;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  text-shadow: none;
+}
+
+@media (min-width: 768px) {
+  .concontainer {
+height: fit-content;
+
+    /* Set other desired styles for the container */
+    background-color: rgb(161, 161, 248);
+  }
+}
