@@ -1,5 +1,5 @@
 // Portfolio.js
-import React from 'react';
+
 import ProjectCard from './ProjectCard';
 import Recipe from '../assets/images/Recipe.png';
 import PWA from '../assets/images/PAWtextEditor.png';
